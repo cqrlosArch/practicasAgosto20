@@ -1,4 +1,4 @@
-# GAME: Rock, Papper, scissor, spock, lizard
+# GAME: Rock, papper, scissor, spock, lizard
 
 ## Workflow Webpack: Babel, Sass, Pug, Images, Files & Browser-Sync
 
