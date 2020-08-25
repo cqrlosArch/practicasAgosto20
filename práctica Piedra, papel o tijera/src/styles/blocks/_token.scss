@@ -1,0 +1,68 @@
+.token {
+    position: absolute;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform .1s ease-in-out;
+    
+    &--paper{
+        
+        transform: translate(130%,-90%);
+        &:hover{
+            transform: translate(130%,-90%) scale(.9);
+        }
+       
+    }
+    
+    &--rock{
+       
+        transform: translate(90%,50%);
+        &:hover{
+            transform: translate(90%,50%) scale(.9);
+        }
+    }
+    &--scissors{
+        
+        transform: translate(0,-170%);
+        &:hover{
+            transform: translate(0,-170%) scale(.9);
+        }
+    }
+    &--spock{
+        
+        transform: translate(-130%,-90%);
+        &:hover{
+            transform:  translate(-130%,-90%) scale(.9);
+        }
+    }
+    &--lizard{
+        
+        transform: translate(-90%,50%);
+        &:hover{
+            transform:  translate(-90%,50%) scale(.9);
+        }
+    }
+  
+}
+
+.img__paper{
+    border: 7px solid $paper;
+}
+.img__rock{
+    border: 7px solid $rock;
+}
+.img__scissors{
+    border: 7px solid $scissors;
+}
+.img__spock{
+    border: 7px solid $spock;
+}
+.img__lizard{
+    border: 7px solid $lizard;
+}

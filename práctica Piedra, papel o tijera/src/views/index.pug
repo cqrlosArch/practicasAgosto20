@@ -1,0 +1,28 @@
+extends templates/template.pug
+
+block title
+  title Rock, Paper, Scissors, Lizard and Spock
+
+
+block content
+  .winGame 
+    h2.winner The winner is..
+  .display
+    .rules 
+      p.title Rules
+    .countdown 
+      h4.countdown__title Countdown 
+      p.countdown__count Go!
+    .rules__modal
+      .rules__modal--close
+    .token.token__display.token--paper.img__paper(data-token='paper')
+      img(src="images/icon-paper.svg", alt="icon-paper")
+    .token.token__display.token--rock.img__rock(data-token='rock')
+      img(src="images/icon-rock.svg", alt="icon-paper")
+    .token.token__display.token--scissors.img__scissors(data-token='scissors')
+      img(src="images/icon-scissors.svg", alt="icon-paper")
+    .token.token__display.token--spock.img__spock(data-token='spock')
+      img(src="images/icon-spock.svg", alt="icon-paper")
+    .token.token__display.token--lizard.img__lizard(data-token='lizard')
+      img(src="images/icon-lizard.svg", alt="icon-paper")
+    

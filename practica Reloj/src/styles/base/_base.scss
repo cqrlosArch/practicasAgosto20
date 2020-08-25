@@ -1,0 +1,27 @@
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+:root{
+    --deg_hour:0;
+    --deg_minutes:0;
+    --deg_seconds:0;
+}
+
+body{
+    background-color: $bg-color;
+    font-family: 'MuseoModerno', cursive;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+

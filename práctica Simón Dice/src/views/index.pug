@@ -1,0 +1,16 @@
+extends templates/template.pug
+
+block title
+  title Home - Simon Dice
+
+
+block content
+    .displayUI
+      .result
+          h2.result__info 
+      .display
+        .display__game
+          .display__game__item.display__game__green(data-value='green')
+          .display__game__item.display__game__red(data-value='red')
+          .display__game__item.display__game__yellow(data-value='yellow')
+          .display__game__item.display__game__blue(data-value='blue')

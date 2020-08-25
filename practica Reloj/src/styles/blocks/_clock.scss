@@ -1,0 +1,25 @@
+.clock-container{
+  margin:auto;
+  padding:0; 
+  position: relative;
+  background: #fff;
+  width:25rem;
+  height:25rem;
+  border:.7rem solid #444;
+  border-radius: 50%;
+  box-shadow: .1rem .1rem .2rem rgba(0,0,0,.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #8f8f8f;
+    border:1px solid $color-hour;
+    border-radius: 50%;
+    z-index: 100;
+  }
+}

@@ -1,0 +1,25 @@
+.header
+    .header__logo
+        img(src="images/logo.png", alt="img").header__logo__img
+    .header__userInfo
+        h2.header__userInfo__name Username
+    .header__difficulty
+        h2.header__difficulty__title Difficulty Level
+        form.header__difficulty__form
+            .form__input
+                input(type="radio" name="difficulty" value="1" id="1" checked).form__input__difficulty
+                label(for="1") 1
+            .form__input
+                input(type="radio" name="difficulty" value="2" id="2").form__input__difficulty
+                label(for="2") 2
+            .form__input
+                input(type="radio" name="difficulty" value="3" id="3").form__input__difficulty
+                label(for="3") 3
+    .header__level
+        .header__level__currentLevel
+            h2.header__level__currentLevel__title Current Level
+            p.header__level__currentLevel__num 1
+    .header__play
+        .header__play__container
+            .header__play__icon
+ 

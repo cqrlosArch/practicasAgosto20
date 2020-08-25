@@ -1,0 +1,27 @@
+header.header
+    img(src="images/logo-bonus.svg", alt="logo").logo
+    .config
+        .rounds
+            h2.rounds__title Rounds
+            form.rounds__form
+                .form__input
+                    
+                    input(type="radio" value="3" name="rounds" id="3" checked).input__round.round--3
+                    label(for="3") 3
+                .form__input
+                   
+                    input(type="radio" value="5" name="rounds" id="5").input__round.round--6
+                    label(for="5") 5
+        .play
+    .result
+        .result__title
+            h2 Scores
+        .result__scores
+            .scores
+                .scores--human
+                    h3.title__score Human
+                    .score.score_human 0
+            .scores
+                .scores--computer
+                    h3.title__score Computer
+                    .score.score_computer 0

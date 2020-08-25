@@ -1,0 +1,53 @@
+.hour {
+  position: absolute;
+  z-index: 10;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__span {
+    position: absolute;
+    z-index: 20;
+    color: $color-hour;
+    &--h1 {
+      transform: rotate(300deg) translate(10rem) rotate(-300deg);
+      
+    }
+    &--h2 {
+      transform: rotate(330deg) translate(10rem) rotate(-330deg);
+    }
+    &--h3 {
+      transform: rotate(0deg) translate(10rem) rotate(0deg);
+    }
+    &--h4 {
+      transform: rotate(30deg) translate(10rem) rotate(-30deg);
+    }
+    &--h5 {
+      transform: rotate(60deg) translate(10rem) rotate(-60deg);
+    }
+    &--h6 {
+      transform: rotate(90deg) translate(10rem) rotate(-90deg);
+    }
+    &--h7 {
+      transform: rotate(120deg) translate(10rem) rotate(-120deg);
+    }
+    &--h8 {
+      transform: rotate(150deg) translate(10rem) rotate(-150deg);
+    }
+    &--h9 {
+      transform: rotate(180deg) translate(10rem) rotate(-180deg);
+    }
+    &--h10 {
+      transform: rotate(210deg) translate(10rem) rotate(-210deg);
+    }
+    &--h11 {
+      transform: rotate(240deg) translate(10rem) rotate(-240deg);
+    }
+    &--h12 {
+      transform: rotate(270deg) translate(10rem) rotate(-270deg);
+    }
+
+  
+  }
+}

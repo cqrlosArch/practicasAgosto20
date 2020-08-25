@@ -1,0 +1,114 @@
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 3px solid #fff;
+  width: 600px;
+  height: 160px;
+  margin: 2rem auto;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .logo {
+    width: 100%;
+    display: block;
+    max-width: 100px;
+  }
+  .config {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .rounds {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      &__title {
+        letter-spacing: 0.2rem;
+      }
+
+      &__form {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & input[type="radio"]:checked + label {
+          border-bottom: 2px solid #fff;
+        }
+        .form__input {
+          font-size: 20px;
+          font-weight: 700;
+          width: 50px;
+        }
+      }
+    }
+    .play {
+      width: 100px;
+      height: 100px;
+      background-image: url("../images/icon-play.svg");
+      background-repeat: no-repeat;
+      background-position: center right;
+      background-size: 100%;
+      margin-right: -2rem;
+      cursor: pointer;
+      transition: transform 0.2s linear;
+
+      &:hover {
+        filter: drop-shadow(0 0 0.75rem #fff);
+      }
+      &:active {
+        transform: scale(0.8);
+      }
+    }
+  }
+
+  .result {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    &__title {
+      letter-spacing: 0.2rem;
+      margin-top: -2rem;
+    }
+    &__scores {
+      margin-top: -1rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+
+      .scores {
+        border: 2px solid #fff;
+        width: 70px;
+        height: 70px;
+        border-radius: 15px;
+        margin: 0.2rem;
+        &--human,
+        &--computer {
+          font-size: 12px;
+          padding: 0.3rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .title__score {
+            font-weight: 500;
+            letter-spacing: 0.05rem;
+          }
+          .score {
+            margin-top: -0.7rem;
+            font-size: 20px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}

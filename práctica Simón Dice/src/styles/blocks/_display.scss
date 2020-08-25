@@ -1,0 +1,104 @@
+.displayUI {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  .display {
+    margin-top: -6rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__game {
+      overflow: hidden;
+      position: relative;
+      width: 300px;
+      height: 300px;
+      border: 8px solid #222;
+      border-radius: 50%;
+      transform: rotate(45deg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #222;
+      &:after {
+        content: "";
+        position: absolute;
+        z-index: 5;
+        width: 80px;
+        height: 80px;
+        background-color: #222;
+        border-radius: 50%;
+      }
+
+      &__item {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        z-index: 1;
+        border: 4px solid #222;
+        cursor: pointer;
+        border-radius: 1.5rem;
+        box-shadow: inset 4px 5px 66px -10px rgba(29, 22, 22, 0.5);
+      }
+
+      &__green {
+        transform: rotate(45deg) translate(-50%, 50%);
+        background-color: $green;
+
+        &:hover,
+        &.active {
+          background-color: $greenActive;
+          box-shadow: inset -70px -61px 38px -67px #fff;
+          filter: brightness(150%);
+        }
+      }
+      &__blue {
+        transform: rotate(45deg) translate(50%, -50%);
+        background-color: $blue;
+        &:hover,
+        &.active {
+          background-color: $blueActive;
+          box-shadow: inset -70px -61px 38px -67px #fff;
+          filter: brightness(150%);
+        }
+      }
+      &__yellow {
+        transform: rotate(45deg) translate(50%, 50%);
+        background-color: $yellow;
+        &:hover,
+        &.active {
+          background-color: $yellowActive;
+          box-shadow: inset -79px 67px 38px -67px #fff;
+          filter: brightness(150%);
+        }
+      }
+      &__red {
+        background-color: $red;
+        transform: rotate(45deg) translate(-50%, -50%);
+        &:hover,
+        &.active {
+          background-color: $redActive;
+          box-shadow: inset -70px -61px 38px -67px #fff;
+          filter: brightness(150%);
+        }
+      }
+    }
+  }
+
+  .result {
+    margin-top: -5rem;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__info{
+      font-size: 25px;
+   
+    }
+  }
+}

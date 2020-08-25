@@ -1,0 +1,42 @@
+.needle {
+  position: relative;
+  width: 100%;
+  &--hour {
+    position: absolute;
+    top: calc(50% - 6.5rem);
+    left: calc(50% - 0.26rem);
+    width: 0.5rem;
+    height: 6.5rem;
+    background-color: $bg-needle-hour;
+    transform-origin: center bottom;
+    z-index: 40;
+    border-radius: 40% 40% 0 0;
+    transform: rotateZ(var(--deg_hour));
+  }
+
+  &--minutes {
+    position: absolute;
+    top: calc(50% - 8.5rem);
+    left: calc(50% - 0.26rem);
+    width: 0.5rem;
+    height: 9.5rem;
+    background-color: $bg-needle-minutes;
+    transform-origin: center calc(100% - 1rem);
+    z-index: 50;
+    border-radius: 40% 40% 0 0;
+    transform: rotateZ(var(--deg_minutes));
+  }
+
+  &--seconds {
+    position: absolute;
+    top: calc(50% - 10rem);
+    left: calc(50% - 0.26rem);
+    width: 0.4rem;
+    height: 12rem;
+    background-color: $bg-needle-seconds;
+    transform-origin: center calc(100% - 2rem);
+    z-index: 60;
+    border-radius: 40% 40% 0 0;
+    transform: rotateZ(var(--deg_seconds));
+  }
+}

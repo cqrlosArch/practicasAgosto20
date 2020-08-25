@@ -1,0 +1,17 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to left, $bg-color2 -20%, $bg-color 100%);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  text-align: center;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color:$mainColor;
+}
