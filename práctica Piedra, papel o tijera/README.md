@@ -1,4 +1,6 @@
-# Workflow Webpack: Babel, Sass, Pug, Images, Files & Browser-Sync
+# GAME: Rock, Papper, scissor, spock, lizard
+
+## Workflow Webpack: Babel, Sass, Pug, Images, Files & Browser-Sync
 
 ## Start Proyect: 
 - Para desarrollo: 
